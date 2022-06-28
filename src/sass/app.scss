@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    user-select: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    @apply text-slate-500 bg-slate-100;
+}
+
+.fade-up {
+    animation: fadeUp 500ms both;
+    @keyframes fadeUp {
+        from {
+            opacity: 0;
+            transform: translateY(2rem);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
